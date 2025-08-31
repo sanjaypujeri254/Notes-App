@@ -215,7 +215,7 @@ const SignUp: React.FC = () => {
         {step === 1 && (
           <form onSubmit={handleSendOTP} className="space-y-6">
             <Input
-              label="Jones Dharmad"
+              label="Your Name"
               type="text"
               placeholder="Jones Dharmad"
               value={formData.fullName}
@@ -225,7 +225,7 @@ const SignUp: React.FC = () => {
             />
 
             <Input
-              label="11 December 1997"
+              label="Date of Birth"
               type="date"
               value={formData.dateOfBirth}
               onChange={(e) => handleInputChange('dateOfBirth', e.target.value)}
@@ -234,7 +234,7 @@ const SignUp: React.FC = () => {
             />
 
             <Input
-              label="jones.karmad@gmail.com"
+              label="Email"
               type="email"
               placeholder="jones.karmad@gmail.com"
               value={formData.email}
